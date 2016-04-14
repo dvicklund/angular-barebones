@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TAAAST</title>
+    <script src="bundle.js"></script>
+  </head>
+  <body ng-app="application">
+    <section ng-controller="NameController as namectrl">
+      <input type="text" ng-model="namectrl.firstName">
+      <input type="text" ng-model="namectrl.lastName">
+      <p>{{namectrl.fullName}}</p>
+      <button ng-click="namectrl.update()">update</button>
+    </section>
+  </body>
+</html>
